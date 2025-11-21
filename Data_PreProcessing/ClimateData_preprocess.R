@@ -4,7 +4,7 @@
 
 library(tidyverse)
 
-roa <- read.csv("./Data_sources/NOAA_ROA/4043554_NOAA_ROAdaily_1jan1948_2jun2025.csv")
+roa <- read.csv("./Data_PreProcessing/Data_sources/NOAA_ROA/4043554_NOAA_ROAdaily_1jan1948_2jun2025.csv")
 ##units are in inches and F, need to convert to meters and C
 df <- roa |>
   dplyr::select(DATE, PRCP, TMIN, TMAX) |>
